@@ -23,8 +23,8 @@ export class MyToken extends DeployableOP_20 {
     public override onDeployment(_calldata: Calldata): void {
         const maxSupply: u256 = u256.fromString('1000000000000000000000000000'); // Your max supply. (Here, 1 billion tokens)
         const decimals: u8 = 18; // Your decimals.
-        const name: string = 'SoulGoodmanToken'; // Your token name.
-        const symbol: string = 'SGT'; // Your token symbol.
+        const name: string = 'SoulGoodmanCoin'; // Your token name.
+        const symbol: string = 'SGC'; // Your token symbol.
 
         this.instantiate(new OP20InitParameters(maxSupply, decimals, name, symbol));
 
